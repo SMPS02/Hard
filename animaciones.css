@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #111;
+}
+.cajita{
+
+    width: 400px;
+    height: 400px;
+    border: 2px double white;
+    background-color: red;
+    position: absolute;
+    left: 550px;
+    bottom: 200px;
+    animation: cambiar-color 5s linear infinite;
+}
+@keyframes cambiar-color{
+
+    to{
+        background-color: blueviolet;
+    }
+}
