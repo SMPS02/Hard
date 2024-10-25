@@ -102,6 +102,31 @@ input:focus{
     transform: scale(1.1);
 
 }
+.CajitaAnimada{
+    width: 400px;
+    height: 400px;
+    background-color: chocolate;
+    margin-top: 50px;
+    border: 1px solid black;
+    
+    animation: Caja-Movimiento 5s linear infinite;
+}
+@keyframes Caja-Movimiento{
+
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+
+        transform: translateX(1000px);
+    }
+    100%{
+
+        transform: translateX(0);
+
+    }
+   
+}
 @media screen and (max-width:900px) {
 
 .main{
