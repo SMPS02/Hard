@@ -109,20 +109,31 @@ input:focus{
     margin-top: 50px;
     border: 1px solid black;
     
-    animation: Caja-Movimiento 5s linear infinite;
+    animation: Caja-Movimiento 10s linear infinite;
 }
 @keyframes Caja-Movimiento{
 
     0%{
         transform: translateX(0);
+        background-color: chocolate;
+    }
+    25%{
+
+        transform: translateX(500px);
+        background-color: orange;
     }
     50%{
 
         transform: translateX(1000px);
+        background-color: yellow;
+    }
+    75%{
+        transform: translateX(500px);
+
     }
     100%{
-
         transform: translateX(0);
+        background-color: chocolate;
 
     }
    
