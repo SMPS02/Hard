@@ -184,34 +184,35 @@ ul,ol{
 }
 .contenedor-de-cajitas{
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    height: 500px;
     border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .CajitaAnimada{
     width: 400px;
     height: 400px;
     background-color: chocolate;
-    border: 1px solid black;
+    position: relative;
     
     animation: Caja-Movimiento 10s linear infinite;
+    z-index: 1;
 }
 .CajitaAnimada3{
     width: 400px;
     height: 400px;
-    background-color: chocolate;
+    background-color: orangered;
     border: 1px solid black;
     
     animation: Caja-Movimiento3 10s linear infinite;
 }
 .contenedor-de-cajitas2{
     height: 1300px;
-    border: 1px solid black;
     position: absolute;
     top: 50px;
     left: 500px;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
 justify-content: space-between;
@@ -219,35 +220,54 @@ justify-content: space-between;
 .CajitaAnimada2{
     width: 400px;
     height: 400px;
-    background-color: chocolate;
+    background-color: orangered;
     border: 1px solid black;
     
-    animation: Caja-Movimiento2 10s linear infinite 2s;
+    animation: Caja-Movimiento2 10s linear infinite;
 }
 .CajitaAnimada4{
     width: 400px;
     height: 400px;
-    background-color: chocolate;
+    background-color: orangered;
     border: 1px solid black;
     
-    animation: Caja-Movimiento4 10s linear infinite 2s;
+    animation: Caja-Movimiento4 10s linear infinite;
+}
+.efecto::before{
+
+    content: "";
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    background: linear-gradient(80deg, black, white, aqua, green);
+    z-index: -1;
+}
+.efecto::after{
+
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: orangered;
+    z-index: 0;
 }
 
 @keyframes Caja-Movimiento{
 
     0%{
         transform: translateX(0);
-        background-color: chocolate;
     }
     25%{
 
         transform: translateX(500px);
-        background-color: orange;
     }
     50%{
 
         transform: translateX(1000px);
-        background-color: yellow;
     }
     75%{
         transform: translateX(500px);
@@ -255,7 +275,6 @@ justify-content: space-between;
     }
     100%{
         transform: translateX(0);
-        background-color: chocolate;
 
     }
    
@@ -264,17 +283,14 @@ justify-content: space-between;
 
     0%{
         transform: translateY(0);
-        background-color: chocolate;
     }
     25%{
 
         transform: translateY(480px);
-        background-color: orange;
     }
     50%{
 
         transform: translateY(960px);
-        background-color: yellow;
     }
     75%{
         transform: translateY-(480px);
@@ -282,7 +298,6 @@ justify-content: space-between;
     }
     100%{
         transform: translateY(0);
-        background-color: chocolate;
 
     }
    
@@ -291,17 +306,14 @@ justify-content: space-between;
 
     0%{
         transform: translateX(0);
-        background-color: chocolate;
     }
     25%{
 
         transform: translateX(-500px);
-        background-color: orange;
     }
     50%{
 
         transform: translateX(-1000px);
-        background-color: yellow;
     }
     75%{
         transform: translateX(-500px);
@@ -309,7 +321,6 @@ justify-content: space-between;
     }
     100%{
         transform: translateX(0);
-        background-color: chocolate;
 
     }
    
@@ -318,17 +329,14 @@ justify-content: space-between;
 
     0%{
         transform: translateY(0);
-        background-color: chocolate;
     }
     25%{
 
         transform: translateY(-480px);
-        background-color: orange;
     }
     50%{
 
         transform: translateY(-960px);
-        background-color: yellow;
     }
     75%{
         transform: translateY-(-480px);
@@ -336,7 +344,6 @@ justify-content: space-between;
     }
     100%{
         transform: translateY(0);
-        background-color: chocolate;
 
     }
    
