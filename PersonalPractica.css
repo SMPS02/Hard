@@ -80,6 +80,7 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 .Texto-Principal{
 
@@ -185,10 +186,10 @@ ul,ol{
 .contenedor-de-cajitas{
     width: 100%;
     height: 500px;
-    border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 40px;
 }
 
 .CajitaAnimada{
@@ -283,14 +284,14 @@ justify-content: space-between;
     }
     25%{
 
-        transform: translateY(480px);
+        transform: translateY(470px);
     }
     50%{
 
-        transform: translateY(960px);
+        transform: translateY(940px);
     }
     75%{
-        transform: translateY(480px);
+        transform: translateY(470px);
 
     }
     100%{
@@ -329,14 +330,14 @@ justify-content: space-between;
     }
     25%{
 
-        transform: translateY(-480px);
+        transform: translateY(-470px);
     }
     50%{
 
-        transform: translateY(-960px);
+        transform: translateY(-900px);
     }
     75%{
-        transform: translateY(-480px);
+        transform: translateY(-470px);
 
     }
     100%{
@@ -348,14 +349,16 @@ justify-content: space-between;
 .imagen-principal:hover{
     
     transform: scale(1.2);
+    filter: blur(1px);
 
 }
 .Texto-Principal:hover{
 
     background-color: yellow;
     transform: scale(1.2);
-    width: 450px;
-    padding: 20px;
+    font-size: .9rem;
+    height: auto;
+    
 }
 
 @media screen and (max-width:900px) {
